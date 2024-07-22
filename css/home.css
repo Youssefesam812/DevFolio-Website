@@ -1,0 +1,760 @@
+:root {
+    --maincolor: #0078FF;
+}
+
+.bgmain {
+    background-color: #F5F5F5;
+}
+
+.containserv {
+    width: 100%;
+    margin: auto;
+}
+
+.containerport {
+    width: 100%;
+    margin: auto;
+}
+
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.5)), url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.801) !important;
+    z-index: 50;
+}
+
+.nav-link,
+.nav-link.active {
+    color: white;
+    margin-left: 15px;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    background-color: white;
+    transition: all 1s;
+}
+
+.nav-link:hover::after {
+
+    width: 0%;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.nav-link.active::after {
+    content: "";
+    width: 0%;
+
+}
+
+
+.dropdown::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    background-color: white;
+    transition: all 1s;
+}
+
+.dropdown:hover::after {
+
+    width: 70%;
+}
+
+.headercont {
+    height: 95%;
+}
+
+.header-h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.animated-text {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.animated-text span {
+    position: relative;
+}
+
+.animated-text span::before {
+    content: "";
+    color: white;
+    animation: words 15s infinite;
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 105%;
+    background-color: transparent;
+    border-left: 5px solid white;
+    right: -8px;
+    animation: cursor .8s infinite, typing 15s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 5px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+
+    0%,
+    2% {
+        content: "D";
+    }
+
+
+    3% {
+        content: "De";
+    }
+
+
+    4% {
+        content: "Dev";
+    }
+
+
+    5% {
+        content: "Deve";
+    }
+
+
+    6% {
+        content: "Devel";
+    }
+
+
+    7% {
+        content: "Develo";
+    }
+
+
+    8% {
+        content: "Develop";
+    }
+
+
+    9% {
+        content: "Develope";
+    }
+
+
+    10% {
+        content: "Developer";
+    }
+
+    11% {
+        content: "Develope";
+    }
+
+    12% {
+        content: "Develop";
+    }
+
+    13% {
+        content: "Develo";
+    }
+
+    14% {
+        content: "Devel";
+    }
+
+    15% {
+        content: "Deve";
+    }
+
+    16% {
+        content: "Dev";
+    }
+
+    17% {
+        content: "De";
+    }
+
+    18% {
+        content: "D";
+    }
+
+    22% {
+        content: "F";
+    }
+
+    23% {
+        content: "Fr";
+    }
+
+    24% {
+        content: "Fre";
+    }
+
+    25% {
+        content: "Free";
+    }
+
+    26% {
+        content: "Freel";
+    }
+
+    27% {
+        content: "Freela";
+    }
+
+    28% {
+        content: "Freelan";
+    }
+
+    29% {
+        content: "Freelanc";
+    }
+
+    30% {
+        content: "Freelance";
+    }
+
+    31%,
+    34% {
+        content: "Freelancer";
+    }
+
+    35% {
+        content: "Freelance";
+    }
+
+    36% {
+        content: "Freelanc";
+    }
+
+    37% {
+        content: "Freelan";
+    }
+
+    38% {
+        content: "Freela";
+    }
+
+    39% {
+        content: "Freel";
+    }
+
+    40% {
+        content: "Free";
+    }
+
+    41% {
+        content: "Fre";
+    }
+
+    42% {
+        content: "Fr";
+    }
+
+    43% {
+        content: "F";
+    }
+
+
+
+    47% {
+        content: "D";
+    }
+
+    48% {
+        content: "De";
+    }
+
+    49% {
+        content: "Des";
+    }
+
+    50% {
+        content: "Desi";
+    }
+
+    51% {
+        content: "Desig";
+    }
+
+    52% {
+        content: "Design";
+    }
+
+    53% {
+        content: "Designe";
+    }
+
+    54%,
+    58% {
+        content: "Designer";
+    }
+
+    61% {
+        content: "Designe";
+    }
+
+    62% {
+        content: "Design";
+    }
+
+    63% {
+        content: "Desig";
+    }
+
+    64% {
+        content: "Desi";
+    }
+
+    65% {
+        content: "Des";
+    }
+
+    66% {
+        content: "De";
+    }
+
+    67% {
+        content: "D";
+    }
+
+
+
+    72% {
+        content: "P";
+    }
+
+    73% {
+        content: "Ph";
+    }
+
+    74% {
+        content: "Pho";
+    }
+
+    75% {
+        content: "Phot";
+    }
+
+    76% {
+        content: "Photo";
+    }
+
+    77% {
+        content: "Photog";
+    }
+
+    78% {
+        content: "Photogr";
+    }
+
+    79% {
+        content: "Photogra";
+    }
+
+    80% {
+        content: "Photograp";
+    }
+
+    81% {
+        content: "Photograph";
+    }
+
+    82% {
+        content: "Photographe";
+    }
+
+    83%,
+    86% {
+        content: "Photographer";
+    }
+
+    88% {
+        content: "Photographe";
+    }
+
+    89% {
+        content: "Photograph";
+    }
+
+    90% {
+        content: "Photograp";
+    }
+
+    91% {
+        content: "Photogra";
+    }
+
+    92% {
+        content: "Photogr";
+    }
+
+    93% {
+        content: "Photog";
+    }
+
+    94% {
+        content: "Photo";
+    }
+
+    95% {
+        content: "Phot";
+    }
+
+    96% {
+        content: "Pho";
+    }
+
+    97% {
+        content: "Ph";
+    }
+
+    100% {
+        content: "P";
+    }
+
+
+
+
+}
+
+@keyframes typing {
+
+    0%,
+    100% {
+        width: 0;
+    }
+
+}
+
+.about_me {
+    position: relative;
+}
+
+.about_me::after {
+    content: "";
+    width: 40%;
+    height: 3px;
+    position: absolute;
+    bottom: -10;
+
+    left: 0px;
+    background-color: var(--maincolor);
+
+}
+
+.lineabout {
+    width: 90%;
+    line-height: 35px;
+}
+
+.serciveh2 {
+    font-size: 45px;
+}
+
+.servicep {
+    position: relative;
+}
+
+.servicep::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    bottom: -23px;
+    left: 45%;
+    background-color: var(--maincolor);
+}
+
+.contserv {
+    margin-top: 100px;
+
+}
+
+.iconservice {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    border: solid 11px var(--maincolor);
+    color: black;
+    transition: all 0.5s;
+}
+
+.iconservice:hover {
+    background-color: var(--maincolor);
+    color: white;
+    border: solid 11px#f1f4f87e;
+}
+
+.servwidth {
+    width: 100%;
+}
+
+.numbers {
+    padding-top: 70px;
+    padding-bottom: 90px;
+    background: linear-gradient(#0077ffa2, #0077ffa2), url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.iconnumbers {
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid 11px rgba(255, 255, 255, 0.733);
+    color: white;
+}
+
+.portfolioh2 {
+    font-size: 45px;
+}
+
+.portfoliop {
+    position: relative;
+}
+
+.portfoliop::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    bottom: -23px;
+    left: 45%;
+    background-color: var(--maincolor);
+}
+
+.potfoliowidth {
+    width: 100%;
+}
+
+.portfolioimg {
+    overflow: hidden;
+}
+
+.portfolioimg img {
+    transition: all 2s;
+}
+
+.potfoliowidth:hover img {
+    transform: scale(1.5);
+}
+
+.portfoliocont {
+    margin-top: 100px;
+}
+
+.psmall {
+    font-size: 13px;
+    margin-top: -10px;
+}
+
+.spanportfolio {
+    color: var(--maincolor);
+}
+
+.iportfolio {
+    color: var(--maincolor);
+    border: 3px solid #0078FF;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.slider {
+    height: 93vh;
+
+    background: linear-gradient(#0077ffa2, #0077ffa2), url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fi xed;
+}
+
+#Portfolio {
+    margin-bottom: -40px;
+}
+
+.carousel-indicators {
+    bottom: -70px;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+
+#Blog {
+    margin-bottom: 80px;
+}
+
+.blogh2 {
+    font-size: 45px;
+}
+
+.blogp {
+    position: relative;
+}
+
+.blogp::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    bottom: -23px;
+    left: 45%;
+    background-color: var(--maincolor);
+}
+
+.blogcont {
+    margin-top: 90px;
+}
+
+.blogwidth {
+    width: 100%;
+}
+
+.plogo {
+
+    color: white;
+    background-color: #0078FF;
+    font-size: 13px;
+    text-align: center;
+    padding: 4px 15px;
+    border-radius: 6px;
+    transform: translateY(-50%);
+}
+
+.footerblog img {
+    width: 40px;
+}
+
+.pmorgan {
+    position: relative;
+    top: 10px;
+}
+
+.clock {
+    top: 12px;
+}
+
+.clockicon {
+    top: 3px;
+}
+
+#contact {
+    height: 115vh;
+
+    background: linear-gradient(#0077ff85, #0077ff85), url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cont1 {
+    margin-top: 120px;
+}
+
+.sendmsg::after {
+    content: "";
+    width: 18%;
+    height: 3px;
+    position: absolute;
+    bottom: -10;
+    left: 0px;
+    background-color: var(--maincolor);
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.input-group {
+    height: 140px;
+}
+
+.btnform {
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 60px;
+}
+
+.gintouch::after {
+    content: "";
+    width: 21%;
+    height: 3px;
+    position: absolute;
+    bottom: -10;
+    left: 0px;
+    background-color: var(--maincolor);
+}
+
+.btnsend {
+    margin-bottom: 40px;
+}
+
+.iconget {
+    position: relative;
+    top: 6px;
+}
+
+.socialicon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    border: solid 3px var(--maincolor);
+    color: black;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.socialicon:hover {
+    background-color: var(--maincolor);
+    color: white;
+    border: solid 3px#f1f4f87e;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    line-height: 30px;
+    background-color: #0058bd;
+    height: 60vh;
+    color: white;
+    text-align: center;
+}
